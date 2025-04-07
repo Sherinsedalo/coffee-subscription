@@ -1,19 +1,16 @@
 import { Link } from "react-router-dom";
 
-const Navbar: React.FC = () => {
+export const Navbar: React.FC = () => {
   return (
-    <nav className="flex justify-between items-center p-6 bg-white shadow-md">
-
-      <img src="./assets/home/desktop/icon-coffee-bean.svg" alt="Coffee Bean" />
-
-
-      <ul className="flex space-x-6 text-gray-600">
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About us</Link></li>
-        <li><Link to="/plan">Create a plan</Link></li>
+    <nav className="flex justify-between items-center py-4 px-8 max-w-screen-xl mx-auto  ">
+      <img src="src/assets/shared/desktop/logo.svg" alt="Coffee Bean" className="w-50" />
+      <ul className="flex space-x-8  font-barlow uppercase text-[#333D4B] text-sm font-bold tracking-widest ">
+        <li className="hover:text-[#83888F] "><Link to="/">Home</Link></li>
+        <li className="hover:text-[#83888F] "><Link to="/about">About us</Link></li>
+        <li className="hover:text-[#83888F]  "><Link to="/plan">Create a plan</Link></li>
       </ul>
     </nav>
   );
 };
 
-export default Navbar;
+
