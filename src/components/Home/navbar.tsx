@@ -5,8 +5,6 @@ export const Navbar: React.FC = () => {
 
   const [isOpen, setIsOpen] = useState(false);
 
-
-
   return (
     <header className="bg-white shadow-md  md:shadow-none">
       <nav className="flex justify-between items-center py-4 px-8 max-w-screen-xl mx-auto  ">
