@@ -1,9 +1,10 @@
 import './App.css'
-import { Navbar } from './components/Home/navbar';
-import { Hero } from './components/Home/Hero';
-import { CoffeeCollection } from './components/Home/CoffeeCollection';
-import { OrderGuide } from './components/Home/OrderGuide';
-import { Footer } from './components/Home/Footer'
+import { Navbar } from '../src/components/Home/Navbar';
+import { Hero } from '../src/components/Home/Hero';
+import { CoffeeCollection } from '../src/components/Home/CoffeeCollection';
+import { OrderGuide } from '../src/components/Home/OrderGuide';
+import { Footer } from '../src/components/Home/Footer';
+
 function App() {
 
   return (
