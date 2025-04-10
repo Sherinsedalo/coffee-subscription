@@ -1,4 +1,31 @@
 export const AboutUs: React.FC = () => {
+    const locations = [
+        {
+            logo: 'src/assets/about/desktop/illustration-uk.svg',
+            country: 'United Kingdom',
+            street: '68 Asfordby Rd',
+            county: '  Alcaston',
+            postalCode: 'SY6 1YA',
+            phoneNumber: ' +44 1241 918425'
+        },
+        {
+            logo: 'src/assets/about/desktop/illustration-canada.svg',
+            country: 'Canada',
+            street: '1528 Eglinton Avenue',
+            county: 'Toronto',
+            postalCode: ' Ontario M4P 1A6',
+            phoneNumber: '+1 416 485 2997'
+        },
+        {
+            logo: 'src/assets/about/desktop/illustration-australia.svg',
+            country: 'Australia',
+            street: '36 Swanston Street',
+            county: 'Kewell',
+            postalCode: ' Victoria',
+            phoneNumber: '+61 4 9928 3629'
+        }
+    ]
+
 
     return (
 
@@ -36,14 +63,30 @@ export const AboutUs: React.FC = () => {
                    src/assets/about/tablet/image-quality.jpg 768w,
                    src/assets/about/desktop/image-quality.jpg 1024w"
                     alt="Cup of coffee with heart design"
-                    className="absolute -top-34 left-1/2 -translate-x-1/2 rounded-xl lg:top[-40px] lg:left-auto lg:right-15 lg:translate-x-0 z-10 md:-top-40 md:w-70 " />
+                    className="absolute -top-34 left-1/2 -translate-x-1/2 rounded-xl lg:top[-40px] lg:left-auto lg:right-15 lg:translate-x-0 z-10 md:-top-40 md:w-70 lg:w-120 " />
 
-                <div className="flex flex-col text-[#FEFCF7] z-0 mb-6 text-center bg-cover bg-[url(src/assets/about/mobile/bg-quality.png)] md:bg-[url(src/assets/about/tablet/bg-quality.png)] lg:bg-[url(src/assets/about/desktop/bg-quality.png)] h-[500px] rounded-xl p-6 justify-center mt-32 lg:items-start lg:text-left">
+                <div className="flex flex-col text-[#FEFCF7] z-0 mb-6 text-center bg-cover bg-[url(src/assets/about/mobile/bg-quality.png)] md:bg-[url(src/assets/about/tablet/bg-quality.png)] lg:bg-[url(src/assets/about/desktop/bg-quality.png)] h-[500px] rounded-xl p-6 justify-center mt-32 lg:text-left lg:px-24  ">
                     <h4 className="font-fraunces text-4xl mb-5 font-bold"> Uncompromising quality</h4>
-                    <p className="font-barlow text-md leading-7">  Although we work with growers who pay close attention to all stages of harvest and processing,
+                    <p className="font-barlow text-md leading-7 lg:text-lg lg:max-w-[500px]">  Although we work with growers who pay close attention to all stages of harvest and processing,
                         we employ, on our end, a rigorous quality control program to avoid over-roasting or baking the
                         coffee dry. Every bag of coffee is tagged with a roast date and batch number. Our goal is to roast
                         consistent, user-friendly coffee, so that brewing is easy and enjoyable.</p>
+                </div>
+            </div>
+
+            <div className="flex flex-col justify-center items-center m-14  ">
+                <h4 className="font-fraunces text-[#83888F] text-xl font-bold lg:text-3xl lg:self-start">Our headquarters</h4>
+                <div className="m-6 flex flex-col md:flex-row md:gap-15 lg:mt-8 lg:gap-30">
+                    {locations.map((item) => (
+                        <div key={item.country} className="p-3 flex flex-col items-center md:justify-evenly font-barlow  ">
+                            <img src={item.logo} className="mb-4" />
+                            <h2 className="font-fraunces font-extrabold text-xl">{item.country}</h2>
+                            <p>{item.street}</p>
+                            <p>{item.county}</p>
+                            <p>{item.postalCode}</p>
+                            <p>{item.phoneNumber}</p>
+                        </div>
+                    ))}
                 </div>
             </div>
         </section>

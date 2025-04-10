@@ -11,7 +11,7 @@ export const Footer: React.FC = () => {
                 <li className="hover:text-[#FEFCF7] "><Link to="/plan">Create a plan</Link></li>
             </ul>
 
-            <div className="flex gap-6 lg:gap-5 mt-4 lg:mt-0">
+            <div className="flex gap-6 lg:gap-5 mt-4 lg:mt-0 lg:mr-4">
                 <img src="src/assets/shared/desktop/icon-facebook.svg" alt="Facebook logo" />
                 <img src="src/assets/shared/desktop/icon-twitter.svg" alt="Twitter logo"  />
                 <img src="src/assets/shared/desktop/icon-instagram.svg" alt="Instagram logo" />
