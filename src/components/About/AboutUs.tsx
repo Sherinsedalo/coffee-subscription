@@ -1,31 +1,6 @@
-export const AboutUs: React.FC = () => {
-    const locations = [
-        {
-            logo: 'src/assets/about/desktop/illustration-uk.svg',
-            country: 'United Kingdom',
-            street: '68 Asfordby Rd',
-            county: '  Alcaston',
-            postalCode: 'SY6 1YA',
-            phoneNumber: ' +44 1241 918425'
-        },
-        {
-            logo: 'src/assets/about/desktop/illustration-canada.svg',
-            country: 'Canada',
-            street: '1528 Eglinton Avenue',
-            county: 'Toronto',
-            postalCode: ' Ontario M4P 1A6',
-            phoneNumber: '+1 416 485 2997'
-        },
-        {
-            logo: 'src/assets/about/desktop/illustration-australia.svg',
-            country: 'Australia',
-            street: '36 Swanston Street',
-            county: 'Kewell',
-            postalCode: ' Victoria',
-            phoneNumber: '+61 4 9928 3629'
-        }
-    ]
+import { location, locations } from "../../data/locations";
 
+export const AboutUs: React.FC = () => {
 
     return (
 
@@ -77,7 +52,7 @@ export const AboutUs: React.FC = () => {
             <div className="flex flex-col justify-center items-center m-14  ">
                 <h4 className="font-fraunces text-[#83888F] text-xl font-bold lg:text-3xl lg:self-start">Our headquarters</h4>
                 <div className="m-6 flex flex-col md:flex-row md:gap-15 lg:mt-8 lg:gap-30">
-                    {locations.map((item) => (
+                    {locations.map((item: location) => (
                         <div key={item.country} className="p-3 flex flex-col items-center md:justify-evenly font-barlow  ">
                             <img src={item.logo} className="mb-4" />
                             <h2 className="font-fraunces font-extrabold text-xl">{item.country}</h2>

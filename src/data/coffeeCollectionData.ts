@@ -1,4 +1,10 @@
-export const coffeeItems = [
+export type coffeeItem = {
+  img: string;
+  title: string;
+  description: string;
+};
+
+export const coffeeItems: coffeeItem[] = [
   {
     img: "src/assets/home/desktop/image-gran-espresso.png",
     title: "Gran Espresso",
