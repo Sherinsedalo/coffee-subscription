@@ -1,5 +1,6 @@
 import { FC } from "react";
-import { coffeeItems } from "../../data/coffeeCollectionData";
+import { coffeeItems, coffeeItem } from "../../data/coffeeCollectionData";
+
 
 export const CoffeeCollection: FC = () => {
 
@@ -11,7 +12,7 @@ export const CoffeeCollection: FC = () => {
             {/* Coffee options */}
 
             <div className=" relative z-10 py-10 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-4 gap-12 pt-20 md:pt-40 text-center ">
-                {coffeeItems.map((item) => (
+                {coffeeItems.map((item: coffeeItem) => (
                     <div key={item.title} className="flex flex-col items-center">
                         <img src={item.img} alt={item.title} className='mb-4 w-32 h-auto' />
                         <h4 className="font-fraunces text-[#333D4C] text-xl font-extrabold mb-2">{item.title}</h4>
