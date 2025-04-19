@@ -1,6 +1,8 @@
 import { FC } from "react";
 import { useState } from "react";
 import { coffeeForm, coffeeFormItem, grindOptions, grindOptionsItem, coffeeKind, coffeeKindItem, coffeeDosage, coffeeDosageItem, deliveryFrequency, deliveryFrequencyItem } from "./planData";
+import { CreateSubscriptionButton } from '../buttons/CreateSubscriptionButton';
+import { OrderSummary } from "./OrderSummary";
 
 export const Subscription: FC = () => {
 
@@ -27,6 +29,7 @@ export const Subscription: FC = () => {
 
     }
 
+
     return (
         <section className="bg-[#FEFCF7] mb-10">
 
@@ -45,7 +48,7 @@ export const Subscription: FC = () => {
                 {openSection === 1 && (
                     <div className="grid grid-cols-1 md:grid-cols-3 md:gap-2 ">
                         {coffeeForm.map((option: coffeeFormItem) => (
-                            <button key={option.title} onClick={() => handlePreferenceSelection(option.title)} className={`p-6 rounded-xl text-center shadow-md flex flex-col justify-evenly items-center m-2 h-45 md:h-60 md:justify-start hover:bg-[#FDD6BA] ${preference === option.title ? 'bg-[#0E8784] text-[#FEFCF7]' : 'bg-[#F4F1EB] text-[#333D4B]'} `}>
+                            <button key={option.title} onClick={() => handlePreferenceSelection(option.title)} className={`p-6 rounded-xl text-center shadow-md flex flex-col justify-evenly items-center m-2 h-45 md:h-60 md:justify-start hover:bg-[#FDD6BA] cursor-pointer ${preference === option.title ? 'bg-[#0E8784] text-[#FEFCF7]' : 'bg-[#F4F1EB] text-[#333D4B]'} `}>
                                 <strong className="font-fraunces text-xl md:mt-4">{option.title}</strong>
                                 <p className="text-md mt-2">{option.description}</p>
                             </button>
@@ -70,7 +73,7 @@ export const Subscription: FC = () => {
                     <div className="grid grid-cols-1 md:grid-cols-3 md:gap-2">
 
                         {coffeeKind.map((option: coffeeKindItem) => (
-                            <button key={option.title} onClick={() => setSelectedCoffeeKind(option.title)} className={`p-6 rounded-xl text-center shadow-md flex flex-col justify-evenly items-center m-2 h-45 md:h-60 md:justify-start hover:bg-[#FDD6BA] ${selectedCoffeeKind === option.title ? 'bg-[#0E8784] text-[#FEFCF7]' : 'bg-[#F4F1EB] text-[#333D4B]'} `}>
+                            <button key={option.title} onClick={() => setSelectedCoffeeKind(option.title)} className={`p-6 rounded-xl text-center shadow-md flex flex-col justify-evenly items-center m-2 h-45 md:h-60 md:justify-start hover:bg-[#FDD6BA] cursor-pointer ${selectedCoffeeKind === option.title ? 'bg-[#0E8784] text-[#FEFCF7]' : 'bg-[#F4F1EB] text-[#333D4B]'} `}>
                                 <strong className="font-fraunces text-xl md:mt-4">{option.title}</strong>
                                 <p className="text-md mt-2">{option.description}</p>
                             </button>
@@ -93,7 +96,7 @@ export const Subscription: FC = () => {
                 {openSection === 3 && (
                     <div className="grid grid-cols-1 md:grid-cols-3 md:gap-2 ">
                         {coffeeDosage.map((option: coffeeDosageItem) => (
-                            <button key={option.title} onClick={() => setSelectedCoffeeDosage(option.title)} className={`p-6 rounded-xl text-center shadow-md flex flex-col justify-evenly items-center m-2 h-45 md:h-60 md:justify-start hover:bg-[#FDD6BA] ${selectedCoffeeDosage === option.title ? 'bg-[#0E8784] text-[#FEFCF7]' : 'bg-[#F4F1EB] text-[#333D4B]'} `}>
+                            <button key={option.title} onClick={() => setSelectedCoffeeDosage(option.title)} className={`p-6 rounded-xl text-center shadow-md flex flex-col justify-evenly items-center m-2 h-45 md:h-60 md:justify-start hover:bg-[#FDD6BA] cursor-pointer ${selectedCoffeeDosage === option.title ? 'bg-[#0E8784] text-[#FEFCF7]' : 'bg-[#F4F1EB] text-[#333D4B]'} `}>
                                 <strong className="font-fraunces text-xl md:mt-4">{option.title}</strong>
                                 <p className="text-md mt-2">{option.description}</p>
                             </button>
@@ -117,7 +120,7 @@ export const Subscription: FC = () => {
                 {openSection === 4 && !isGrindDiseabled && (
                     <div className="grid grid-cols-1 md:grid-cols-3 md:gap-2 ">
                         {grindOptions.map((grind: grindOptionsItem) => (
-                            <button key={grind.title} onClick={() => setGrindPreference(grind.title)} className={`p-6 rounded-xl text-center shadow-md flex flex-col justify-evenly items-center m-2 h-45 md:h-60 md:justify-start hover:bg-[#FDD6BA] ${grindPreference === grind.title ? 'bg-[#0E8784] text-[#FEFCF7]' : 'bg-[#F4F1EB] text-[#333D4B]'}`}>
+                            <button key={grind.title} onClick={() => setGrindPreference(grind.title)} className={`p-6 rounded-xl text-center shadow-md flex flex-col justify-evenly items-center m-2 h-45 md:h-60 md:justify-start hover:bg-[#FDD6BA] cursor-pointer ${grindPreference === grind.title ? 'bg-[#0E8784] text-[#FEFCF7]' : 'bg-[#F4F1EB] text-[#333D4B]'}`}>
                                 <strong className="font-fraunces text-xl md:mt-4">{grind.title}</strong>
                                 <p className="text-md mt-2">{grind.description}</p></button>
                         ))}
@@ -139,7 +142,7 @@ export const Subscription: FC = () => {
                 {openSection === 5 && (
                     <div className="grid grid-cols-1 md:grid-cols-3 md:gap-2 ">
                         {deliveryFrequency.map((option: deliveryFrequencyItem) => (
-                            <button key={option.title} onClick={() => setSelectedDelivery(option.title)} className={`p-6 rounded-xl text-center shadow-md flex flex-col justify-evenly items-center m-2 h-45 md:h-60 md:justify-start hover:bg-[#FDD6BA] ${selectedDelivery === option.title ? 'bg-[#0E8784] text-[#FEFCF7]' : 'bg-[#F4F1EB] text-[#333D4B]'} `}>
+                            <button key={option.title} onClick={() => setSelectedDelivery(option.title)} className={`p-6 rounded-xl text-center shadow-md flex flex-col justify-evenly items-center m-2 h-45 md:h-60 md:justify-start hover:bg-[#FDD6BA] cursor-pointer ${selectedDelivery === option.title ? 'bg-[#0E8784] text-[#FEFCF7]' : 'bg-[#F4F1EB] text-[#333D4B]'} `}>
                                 <strong className="font-fraunces text-xl md:mt-4">{option.title}</strong>
                                 <p className="text-md mt-2">{option.description}</p>
                             </button>
@@ -149,7 +152,19 @@ export const Subscription: FC = () => {
                 )}
             </div>
 
+            <div className="md:mt-14">
+                <OrderSummary
+                    preference={preference}
+                    kind={selectedCoffeeKind}
+                    grind={preference === 'Capsule' ? 'in capsules form' : grindPreference}
+                    amount={selectedCoffeeDosage}
+                    delivery={selectedDelivery}
+                />
+            </div>
 
+            <div className=" mt-5 md:text-right md:mt-9">
+                <CreateSubscriptionButton />
+            </div>
         </section>
     )
 }

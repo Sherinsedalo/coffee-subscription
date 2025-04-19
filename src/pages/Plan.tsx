@@ -7,7 +7,6 @@ const Plan = () => {
     return (
 
         <>
-
             <PlanHero />
             <OrderGuidePlan />
             <Subscription />
