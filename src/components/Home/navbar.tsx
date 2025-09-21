@@ -8,7 +8,7 @@ export const Navbar: React.FC = () => {
   return (
     <header className="bg-white shadow-md  md:shadow-none">
       <nav className="flex justify-between items-center py-4 px-8 max-w-screen-xl mx-auto  ">
-        <img src="src/assets/shared/desktop/logo.svg" alt="Coffee Bean logo" className="w-50" />
+        <img src="/assets/shared/desktop/logo.svg" alt="Coffee Bean logo" className="w-50" />
 
         <ul className="hidden md:flex space-x-8  font-barlow uppercase text-[#333D4B] text-sm font-bold tracking-widest ">
           <li className="hover:text-[#83888F] "><Link to="/">Home</Link></li>
@@ -17,7 +17,7 @@ export const Navbar: React.FC = () => {
         </ul>
 
         <button onClick={() => setIsOpen(!isOpen)} className="md:hidden focus:outline-none z-50" aria-label="Toggle menu" >
-          <img src={isOpen ? '/src/assets/shared/mobile/icon-close.svg' : '/src/assets/shared/mobile/icon-hamburger.svg'}
+          <img src={isOpen ? '/assets/shared/mobile/icon-close.svg' : '/assets/shared/mobile/icon-hamburger.svg'}
             alt={isOpen ? 'Close menu' : 'Open menu'}
             className="w-6 h-6"
           />

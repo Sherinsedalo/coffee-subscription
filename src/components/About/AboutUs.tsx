@@ -5,7 +5,7 @@ export const AboutUs: React.FC = () => {
     return (
 
         <section className="bg-[#FEFCF7]">
-            <div className="bg-[url('src/assets/about/desktop/image-hero-whitecup.jpg')] bg-cover bg-center h-90 m-auto mb-10  lg:mt-10 lg:h-[400px] rounded-xl  text-[#FEFCF7] flex flex-col justify-center  ">
+            <div className="bg-[url('/assets/about/desktop/image-hero-whitecup.jpg')] bg-cover bg-center h-90 m-auto mb-10  lg:mt-10 lg:h-[400px] rounded-xl  text-[#FEFCF7] flex flex-col justify-center  ">
                 <h1 className=" font-fraunces font-extrabold text-2xl leading-relaxed lg:text-5xl ">About Us</h1>
                 <p className="font-barlow leading-relaxed text-base lg:text-xl">  Coffeeroasters began its journey of exotic discovery in 1999, highlighting stories of
                     coffee from around the world. We have since been dedicated to bring the perfect cup - from
@@ -14,9 +14,9 @@ export const AboutUs: React.FC = () => {
 
             <div className=" flex flex-col lg:flex-row lg:justify-center lg:gap-14 items-center">
                 <div className="flex ">
-                    <img srcSet="src/assets/about/mobile/image-commitment.jpg 480w,
-                   src/assets/about/tablet/image-commitment.jpg 768w,
-                   src/assets/about/desktop/image-commitment.jpg 1024w " alt="staff making a coffee" className="rounded-xl mt-8 mb-8 h-100 w-sm" />
+                    <img srcSet="/assets/about/mobile/image-commitment.jpg 480w,
+                   /assets/about/tablet/image-commitment.jpg 768w,
+                   /assets/about/desktop/image-commitment.jpg 1024w " alt="staff making a coffee" className="rounded-xl mt-8 mb-8 h-100 w-sm" />
 
 
                 </div>
@@ -34,13 +34,13 @@ export const AboutUs: React.FC = () => {
             </div>
 
             <div className="relative max-w-screen-xl mx-auto mt-40 ">
-                <img srcSet="src/assets/about/mobile/image-quality.jpg 480w,
-                   src/assets/about/tablet/image-quality.jpg 768w,
-                   src/assets/about/desktop/image-quality.jpg 1024w"
+                <img srcSet="/assets/about/mobile/image-quality.jpg 480w,
+                   /assets/about/tablet/image-quality.jpg 768w,
+                   /assets/about/desktop/image-quality.jpg 1024w"
                     alt="Cup of coffee with heart design"
                     className="absolute -top-34 left-1/2 -translate-x-1/2 rounded-xl lg:top[-40px] lg:left-auto lg:right-15 lg:translate-x-0 z-10 md:-top-40 md:w-70 lg:w-120 " />
 
-                <div className="flex flex-col text-[#FEFCF7] z-0 mb-6 text-center bg-cover bg-[url(src/assets/about/mobile/bg-quality.png)] md:bg-[url(src/assets/about/tablet/bg-quality.png)] lg:bg-[url(src/assets/about/desktop/bg-quality.png)] h-[500px] rounded-xl p-6 justify-center mt-32 lg:text-left lg:px-24  ">
+                <div className="flex flex-col text-[#FEFCF7] z-0 mb-6 text-center bg-cover bg-[url(/assets/about/mobile/bg-quality.png)] md:bg-[url(/assets/about/tablet/bg-quality.png)] lg:bg-[url(/assets/about/desktop/bg-quality.png)] h-[500px] rounded-xl p-6 justify-center mt-32 lg:text-left lg:px-24  ">
                     <h4 className="font-fraunces text-4xl mb-5 font-bold"> Uncompromising quality</h4>
                     <p className="font-barlow text-md leading-7 lg:text-lg lg:max-w-[500px]">  Although we work with growers who pay close attention to all stages of harvest and processing,
                         we employ, on our end, a rigorous quality control program to avoid over-roasting or baking the

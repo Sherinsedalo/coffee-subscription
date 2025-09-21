@@ -40,19 +40,19 @@ export const CoffeeCollection: FC = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-3 mx-auto gap-6 max-w-6xl mx-auto">
 
                         <div className="flex flex-col bg-[#0E8784] justify-center items-center text-[#FEFCF7] h-[300px] w-full p-8 text-center shadow-lg rounded-lg sm:p-10 sm:max-w-md mx-auto sm:h-[320px]">
-                            <img src="src/assets/home/desktop/icon-coffee-bean.svg" className="w-15 mb-6" />
+                            <img src="/assets/home/desktop/icon-coffee-bean.svg" className="w-15 mb-6" />
                             <h4 className="font-bold text-lg font-fraunces  mb-4">Best quality</h4>
                             <p className=" text-sm  ">Discover an endless variety of the world’s best artisan coffee from each of our roasters.</p>
                         </div>
 
                         <div className="flex flex-col bg-[#0E8784] justify-center items-center text-[#FEFCF7] h-[300px] w-full p-8 text-center shadow-lg rounded-lg sm:p-10 sm:max-w-md mx-auto sm:h-[320px]">
-                            <img src="src/assets/home/desktop/icon-gift.svg" className="w-15 mb-4" />
+                            <img src="/assets/home/desktop/icon-gift.svg" className="w-15 mb-4" />
                             <h4 className="font-bold text-lg font-fraunces  mb-4"> Exclusive benefits </h4>
                             <p className="text-sm max-w-md p-3">Special offers and swag when you subscribe, including 30% off your first shipment.</p>
                         </div>
 
                         <div className="flex flex-col bg-[#0E8784] justify-center items-center text-[#FEFCF7] h-[300px] w-full p-8 text-center shadow-lg rounded-lg sm:p-10 sm:max-w-md mx-auto sm:h-[320px]">
-                            <img src="src/assets/home/desktop/icon-truck.svg" className="w-15 mb-4" />
+                            <img src="/assets/home/desktop/icon-truck.svg" className="w-15 mb-4" />
                             <h4 className="font-bold text-lg font-fraunces mb-4">Free shipping </h4>
                             <p className="text-sm max-w-md p-3"> We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.</p>
                         </div>

@@ -9,7 +9,7 @@ export type location = {
 
 export const locations: location[] = [
   {
-    logo: "src/assets/about/desktop/illustration-uk.svg",
+    logo: "/assets/about/desktop/illustration-uk.svg",
     country: "United Kingdom",
     street: "68 Asfordby Rd",
     county: "  Alcaston",
@@ -17,7 +17,7 @@ export const locations: location[] = [
     phoneNumber: "+44 1241 918425",
   },
   {
-    logo: "src/assets/about/desktop/illustration-canada.svg",
+    logo: "/assets/about/desktop/illustration-canada.svg",
     country: "Canada",
     street: "1528 Eglinton Avenue",
     county: "Toronto",
@@ -25,7 +25,7 @@ export const locations: location[] = [
     phoneNumber: "+1 416 485 2997",
   },
   {
-    logo: "src/assets/about/desktop/illustration-australia.svg",
+    logo: "/assets/about/desktop/illustration-australia.svg",
     country: "Australia",
     street: "36 Swanston Street",
     county: "Kewell",

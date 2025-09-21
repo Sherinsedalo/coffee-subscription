@@ -40,7 +40,7 @@ export const Subscription: FC = () => {
                 <button className="w-full text-left text-2xl font-bold py-4 " onClick={() => toggleSection(1)}>
                     <div className="flex justify-between items-center">
                         <h3 className="font-fraunces text-bold text-2xl text-[#83888F] flex items-center ">How do you drink your coffee?</h3>
-                        <img src="src/assets/plan/desktop/icon-arrow.svg" alt="arrow icon" className={`w-4 transform transition-transform duration-1000 ${openSection === 1 ? 'rotate-180' : 'rotate-0'}`} />
+                        <img src="/assets/plan/desktop/icon-arrow.svg" alt="arrow icon" className={`w-4 transform transition-transform duration-1000 ${openSection === 1 ? 'rotate-180' : 'rotate-0'}`} />
                     </div>
 
                 </button>
@@ -65,7 +65,7 @@ export const Subscription: FC = () => {
                 <button className="w-full text-left text-2xl font-bold py-4 " onClick={() => toggleSection(2)}>
                     <div className="flex justify-between items-center">
                         <h3 className="font-fraunces text-bold text-2xl text-[#83888F] flex items-center " > What type of coffee?</h3>
-                        <img src="src/assets/plan/desktop/icon-arrow.svg" alt="arrow icon" className={`w-4 transform transition-transform duration-1000 ${openSection === 2 ? 'rotate-180' : 'rotate-0'}`} />
+                        <img src="/assets/plan/desktop/icon-arrow.svg" alt="arrow icon" className={`w-4 transform transition-transform duration-1000 ${openSection === 2 ? 'rotate-180' : 'rotate-0'}`} />
                     </div>
                 </button>
 
@@ -89,7 +89,7 @@ export const Subscription: FC = () => {
                 <button className="w-full text-left text-2xl font-bold py-4 " onClick={() => toggleSection(3)}>
                     <div className="flex justify-between items-center">
                         <h3 className="font-fraunces text-bold text-2xl text-[#83888F] flex items-center" >How much would you like? </h3>
-                        <img src="src/assets/plan/desktop/icon-arrow.svg" alt="arrow icon" className={`w-4 transform transition-transform duration-1000 ${openSection === 3 ? 'rotate-180' : 'rotate-0'}`} />
+                        <img src="/assets/plan/desktop/icon-arrow.svg" alt="arrow icon" className={`w-4 transform transition-transform duration-1000 ${openSection === 3 ? 'rotate-180' : 'rotate-0'}`} />
                     </div>
                 </button>
 
@@ -113,7 +113,7 @@ export const Subscription: FC = () => {
                 <button className={`w-full text-left text-2xl font-bold py-4  ${isGrindDiseabled ? 'text-[#83888F] cursor-not-allowed' : ''}`} onClick={() => toggleSection(4)}>
                     <div className="flex justify-between items-center">
                         <h3 className="font-fraunces text-bold text-2xl text-[#83888F] flex items-center gap-2">Want us to grind them? </h3>
-                        <img src="src/assets/plan/desktop/icon-arrow.svg" alt="arrow icon" className={`w-4 transform transition-transform duration-1000 ${openSection === 4 ? 'rotate-180' : 'rotate-0'}`} />
+                        <img src="/assets/plan/desktop/icon-arrow.svg" alt="arrow icon" className={`w-4 transform transition-transform duration-1000 ${openSection === 4 ? 'rotate-180' : 'rotate-0'}`} />
                     </div>
 
                 </button>
@@ -134,7 +134,7 @@ export const Subscription: FC = () => {
                 <button onClick={() => toggleSection(5)} className="w-full text-left text-2xl font-bold py-4 " >
                     <div className="flex justify-between items-center">
                         <h3 className="font-fraunces text-bold text-2xl text-[#83888F] flex items-center gap-2">How often should we deliver? </h3>
-                        <img src="src/assets/plan/desktop/icon-arrow.svg" alt="arrow icon" className={`w-4 transform transition-transform duration-1000 ${openSection === 5 ? 'rotate-180' : 'rotate-0'}`} />
+                        <img src="/assets/plan/desktop/icon-arrow.svg" alt="arrow icon" className={`w-4 transform transition-transform duration-1000 ${openSection === 5 ? 'rotate-180' : 'rotate-0'}`} />
 
                     </div>
                 </button>
